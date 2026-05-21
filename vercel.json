@@ -3,9 +3,5 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "api/kintone.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/api/kintone", "dest": "/api/kintone.js" },
-    { "src": "/", "dest": "/index.html" }
   ]
 }
