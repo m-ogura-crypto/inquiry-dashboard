@@ -1,4 +1,10 @@
 export default async function handler(req, res) {
+  // GETリクエストでパスが/api/kintone以外はindex.htmlにリダイレクト
+  if (!req.url.startsWith('/api/')) {
+    res.redirect(302, '/index.html');
+    return;
+  }
+  export default async function handler(req, res) {
   const KINTONE_SUBDOMAIN = 'wellnest-home';
   const KINTONE_APP_ID = '97';
   const KINTONE_API_TOKEN = process.env.KINTONE_API_TOKEN;
