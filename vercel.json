@@ -1,7 +1,4 @@
 {
   "outputDirectory": ".",
-  "routes": [
-    { "src": "/api/kintone", "dest": "/api/kintone.js" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "cleanUrls": true
 }
